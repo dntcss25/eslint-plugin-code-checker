@@ -1,21 +1,29 @@
 {
   "name": "eslint-plugin-code-checker",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Custom ESLint rules for code quality, architecture, and API standards",
   "type": "module",
   "main": "index.js",
+
+  "bin": {
+    "code-checker": "./bin/code-checker.js"
+  },
+
   "exports": {
     ".": "./index.js",
     "./configs/recommended": "./configs/recommended.js",
-    "./configs/recommended.js": "./configs/recommended.js",
-    "./husky/pre-commit": "./husky/pre-commit"
+    "./configs/recommended.js": "./configs/recommended.js"
   },
+
   "files": [
-    "index.js",
+    "bin",
+    "templates",
     "rules",
     "configs",
-    "husky"
+    "husky",
+    "index.js"
   ],
+
   "keywords": [
     "eslint",
     "eslint-plugin",
@@ -24,7 +32,10 @@
     "lint",
     "standards"
   ],
+
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0"
   }
 }
