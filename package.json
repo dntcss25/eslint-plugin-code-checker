@@ -1,0 +1,18 @@
+{
+  "name": "eslint-plugin-code-checker",
+  "version": "1.0.1",
+  "description": "Custom ESLint rules for code quality, architecture, and API standards",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "code-quality",
+    "architecture",
+    "lint",
+    "standards"
+  ],
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
