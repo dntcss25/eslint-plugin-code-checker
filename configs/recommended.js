@@ -1,5 +1,10 @@
+import plugin from '../index.js';
+
 export default {
-  plugins: ['code-checker'],
+  plugins: {
+    'code-checker': plugin
+  },
+
   rules: {
     'code-checker/no-console-left': 'error',
     'code-checker/no-includes-query': 'error',
