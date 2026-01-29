@@ -13,9 +13,8 @@ console.log('\n🔧 Setting up ESLint Code Checker...\n');
 
 console.log('📦 Installing dependencies...');
 run(
-  'npm install -D eslint vue-eslint-parser @typescript-eslint/parser eslint-plugin-code-checker husky lint-staged --legacy-peer-deps'
+  'npm install -D eslint vue-eslint-parser @typescript-eslint/parser husky lint-staged --legacy-peer-deps'
 );
-
 
 const eslintConfigPath = path.join(cwd, 'eslint.config.js');
 
