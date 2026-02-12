@@ -4,6 +4,7 @@ import tsParser from '@typescript-eslint/parser';
 import codeCheckerRecommended from 'eslint-plugin-code-checker/configs/recommended.js';
 
 export default [
+  // Vue SFCs
   {
     files: ['**/*.vue'],
     languageOptions: {
@@ -11,6 +12,14 @@ export default [
       parserOptions: {
         parser: tsParser
       }
+    }
+  },
+
+  // Plain TS/JS files
+  {
+    files: ['**/*.{ts,js}'],
+    languageOptions: {
+      parser: tsParser
     }
   },
 
